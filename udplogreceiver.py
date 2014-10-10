@@ -54,7 +54,6 @@ class UdpHandler(QObject):
             datagram, _, _ = self._socket.readDatagram(datagram_size)
             datagrams.append(datagram)
 
-        print('handling {} datagrams'.format(len(datagrams)))
         records = [convert_datagram(datagram) for datagram in datagrams]
         self._model.add_records(records)
 
@@ -68,7 +67,7 @@ class UdpLogReceiver(QWidget):
         self._model = LogRecordModel()
         filter_model = QSortFilterProxyModel()
         filter_model.setSourceModel(self._model)
-        filter_model.setFilterKeyColumn(2)
+        filter_model.setFilterKeyColumn(3)
 
         self.msg_filter = QLineEdit()
         self.log_view = QTableView()
