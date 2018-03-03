@@ -50,8 +50,8 @@ Screenshot
 Status
 ------
 
-.. image:: https://pypip.in/download/udplogviewer/badge.svg
+.. image:: https://img.shields.io/pypi/dm/udplogviewer.svg
     :target: https://pypi.python.org/pypi/udplogviewer
 
-.. image:: https://pypip.in/version/udplogviewer/badge.svg
+.. image:: https://img.shields.io/pypi/v/udplogviewer.svg
     :target: https://pypi.python.org/pypi/udplogviewer
